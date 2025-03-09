@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="context2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/context2/sensorenode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context2/fio.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context2/sensornode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context2/frameio.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

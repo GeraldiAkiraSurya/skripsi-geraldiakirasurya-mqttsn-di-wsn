@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tools2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/targets/Preon32/tools/Classlinker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32/tools/proguard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

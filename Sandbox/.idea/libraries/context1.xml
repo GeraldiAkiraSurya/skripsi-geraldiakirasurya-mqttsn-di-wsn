@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="context1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/context1/bs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context1/fio.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context1/prog.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context1/frameio.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/context1/basestation.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

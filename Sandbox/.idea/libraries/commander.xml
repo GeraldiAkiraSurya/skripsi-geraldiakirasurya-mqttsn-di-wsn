@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commander">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/tools/commander/jna.jar!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/tools/commander/Commander.jar!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/tools/commander/purejavacomm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

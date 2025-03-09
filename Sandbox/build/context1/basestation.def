@@ -1,0 +1,3215 @@
+name basestation
+import [
+	rt
+]
+header {
+	importPoolOffset 48
+	importCount 1
+	classPoolOffset 64
+	interfacePoolOffset 160
+	implementsPoolOffset 164
+	methodPoolOffset 172
+	codePoolOffset 1200
+	stringPoolOffset 1144
+	mainMethodIndex 0
+	staticPrimitiveFieldCount 0
+	staticReferenceFieldCount 1
+	classCount 12
+	interfaceCount 2
+	implementsCount 2
+	methodCount 81
+	codePoolSize 1218
+	stringCount 4
+}
+classes [
+	{
+		index 0
+		name BaseStation
+		interfaceCount 0
+		superIndex 60
+		superImportIndex 0
+		implementsStart -1
+		methodCount 6
+		methodStart 0
+		superName java/lang/Object
+		instanceFieldCount 2
+		flags 33
+		srcFile BaseStation.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name usart
+				descriptor Lcom/virtenio/driver/usart/USART;
+				className BaseStation
+			}
+			{
+				index 1
+				name out
+				descriptor Ljava/io/OutputStream;
+				className BaseStation
+			}
+		]
+	}
+	{
+		index 1
+		name com/virtenio/driver/usart/USARTParams
+		interfaceCount 0
+		superIndex 60
+		superImportIndex 0
+		implementsStart -1
+		methodCount 14
+		methodStart 6
+		superName java/lang/Object
+		instanceFieldCount 6
+		flags 33
+		srcFile USARTParams.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name baudrate
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+			{
+				index 1
+				name dataBits
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+			{
+				index 2
+				name stopBits
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+			{
+				index 3
+				name parity
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+			{
+				index 4
+				name inputBufferSize
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+			{
+				index 5
+				name outputBufferSize
+				descriptor I
+				className com/virtenio/driver/usart/USARTParams
+			}
+		]
+	}
+	{
+		index 2
+		name com/virtenio/driver/usart/NativeUSART
+		interfaceCount 1
+		superIndex 8
+		superImportIndex -1
+		implementsStart 0
+		methodCount 25
+		methodStart 20
+		superName com/virtenio/driver/NativeDeviceDriver
+		instanceFieldCount 5
+		flags 49
+		srcFile NativeUSART.java
+		implements [
+			com/virtenio/driver/usart/USART
+		]
+		instanceFields [
+			{
+				index 0
+				name instanceId
+				descriptor I
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+			{
+				index 1
+				name lastError
+				descriptor I
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+			{
+				index 2
+				name descriptor
+				descriptor J
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+			{
+				index 4
+				name timeout
+				descriptor I
+				className com/virtenio/driver/usart/NativeUSART
+			}
+		]
+	}
+	{
+		index 3
+		name com/virtenio/driver/usart/USARTOutputStream
+		interfaceCount 0
+		superIndex 25
+		superImportIndex 0
+		implementsStart -1
+		methodCount 4
+		methodStart 45
+		superName java/io/OutputStream
+		instanceFieldCount 1
+		flags 32
+		srcFile USARTOutputStream.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name usart
+				descriptor Lcom/virtenio/driver/usart/USART;
+				className com/virtenio/driver/usart/USARTOutputStream
+			}
+		]
+	}
+	{
+		index 4
+		name com/virtenio/driver/usart/USARTException
+		interfaceCount 0
+		superIndex 5
+		superImportIndex -1
+		implementsStart -1
+		methodCount 2
+		methodStart 49
+		superName com/virtenio/driver/DriverException
+		instanceFieldCount 4
+		flags 33
+		srcFile USARTException.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name stackTrace
+				descriptor "[B"
+				className java/lang/Throwable
+			}
+			{
+				index 1
+				name detailMessage
+				descriptor Ljava/lang/String;
+				className java/lang/Throwable
+			}
+			{
+				index 2
+				name cause
+				descriptor Ljava/lang/Throwable;
+				className java/lang/Throwable
+			}
+			{
+				index 3
+				name errorCode
+				descriptor I
+				className com/virtenio/driver/DriverException
+			}
+		]
+	}
+	{
+		index 5
+		name com/virtenio/driver/DriverException
+		interfaceCount 0
+		superIndex 45
+		superImportIndex 0
+		implementsStart -1
+		methodCount 5
+		methodStart 51
+		superName java/lang/Exception
+		instanceFieldCount 4
+		flags 33
+		srcFile DriverException.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name stackTrace
+				descriptor "[B"
+				className java/lang/Throwable
+			}
+			{
+				index 1
+				name detailMessage
+				descriptor Ljava/lang/String;
+				className java/lang/Throwable
+			}
+			{
+				index 2
+				name cause
+				descriptor Ljava/lang/Throwable;
+				className java/lang/Throwable
+			}
+			{
+				index 3
+				name errorCode
+				descriptor I
+				className com/virtenio/driver/DriverException
+			}
+		]
+	}
+	{
+		index 6
+		name com/virtenio/driver/InstanceManager
+		interfaceCount 0
+		superIndex 60
+		superImportIndex 0
+		implementsStart -1
+		methodCount 2
+		methodStart 56
+		superName java/lang/Object
+		instanceFieldCount 1
+		flags 1057
+		srcFile InstanceManager.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name instances
+				descriptor "[Ljava/lang/Object;"
+				className com/virtenio/driver/InstanceManager
+			}
+		]
+	}
+	{
+		index 7
+		name com/virtenio/driver/DriverInitError
+		interfaceCount 0
+		superIndex 44
+		superImportIndex 0
+		implementsStart -1
+		methodCount 7
+		methodStart 58
+		superName java/lang/Error
+		instanceFieldCount 4
+		flags 33
+		srcFile DriverInitError.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name stackTrace
+				descriptor "[B"
+				className java/lang/Throwable
+			}
+			{
+				index 1
+				name detailMessage
+				descriptor Ljava/lang/String;
+				className java/lang/Throwable
+			}
+			{
+				index 2
+				name cause
+				descriptor Ljava/lang/Throwable;
+				className java/lang/Throwable
+			}
+			{
+				index 3
+				name errorId
+				descriptor I
+				className com/virtenio/driver/DriverInitError
+			}
+		]
+	}
+	{
+		index 8
+		name com/virtenio/driver/NativeDeviceDriver
+		interfaceCount 1
+		superIndex 60
+		superImportIndex 0
+		implementsStart 1
+		methodCount 6
+		methodStart 65
+		superName java/lang/Object
+		instanceFieldCount 4
+		flags 1057
+		srcFile NativeDeviceDriver.java
+		implements [
+			com/virtenio/driver/DeviceDriver
+		]
+		instanceFields [
+			{
+				index 0
+				name instanceId
+				descriptor I
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+			{
+				index 1
+				name lastError
+				descriptor I
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+			{
+				index 2
+				name descriptor
+				descriptor J
+				className com/virtenio/driver/NativeDeviceDriver
+			}
+		]
+	}
+	{
+		index 9
+		name com/virtenio/driver/usart/NativeUSART$1
+		interfaceCount 0
+		superIndex 6
+		superImportIndex -1
+		implementsStart -1
+		methodCount 4
+		methodStart 71
+		superName com/virtenio/driver/InstanceManager
+		instanceFieldCount 1
+		flags 48
+		srcFile NativeUSART.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name instances
+				descriptor "[Ljava/lang/Object;"
+				className com/virtenio/driver/InstanceManager
+			}
+		]
+	}
+	{
+		index 10
+		name com/virtenio/driver/usart/USARTInputStream
+		interfaceCount 0
+		superIndex 22
+		superImportIndex 0
+		implementsStart -1
+		methodCount 4
+		methodStart 75
+		superName java/io/InputStream
+		instanceFieldCount 1
+		flags 32
+		srcFile USARTInputStream.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name usart
+				descriptor Lcom/virtenio/driver/usart/USART;
+				className com/virtenio/driver/usart/USARTInputStream
+			}
+		]
+	}
+	{
+		index 11
+		name BaseStation$1
+		interfaceCount 0
+		superIndex 71
+		superImportIndex 0
+		implementsStart -1
+		methodCount 2
+		methodStart 79
+		superName java/lang/Thread
+		instanceFieldCount 7
+		flags 32
+		srcFile BaseStation.java
+		implements [
+		]
+		instanceFields [
+			{
+				index 0
+				name priority
+				descriptor I
+				className java/lang/Thread
+			}
+			{
+				index 1
+				name runnable
+				descriptor Ljava/lang/Runnable;
+				className java/lang/Thread
+			}
+			{
+				index 2
+				name name
+				descriptor Ljava/lang/String;
+				className java/lang/Thread
+			}
+			{
+				index 3
+				name tid
+				descriptor I
+				className java/lang/Thread
+			}
+			{
+				index 4
+				name localValues
+				descriptor Ljava/lang/Object;
+				className java/lang/Thread
+			}
+			{
+				index 5
+				name inheritableValues
+				descriptor Ljava/lang/Object;
+				className java/lang/Thread
+			}
+			{
+				index 6
+				name this$0
+				descriptor LBaseStation;
+				className BaseStation$1
+			}
+		]
+	}
+]
+interfaces [
+	{
+		index 0
+		name com/virtenio/driver/usart/USART
+		superCount 1
+		implementsStart 1
+		flags 1537
+		extends [
+			com/virtenio/driver/DeviceDriver
+		]
+	}
+	{
+		index 1
+		name com/virtenio/driver/DeviceDriver
+		superCount 0
+		implementsStart -1
+		flags 1537
+		extends [
+		]
+	}
+]
+implements [
+	{
+		index 0
+		interfaceIndex 0
+		interfaceName com/virtenio/driver/usart/USART
+		typeId 2
+		importIndex -1
+		next false
+	}
+	{
+		index 1
+		interfaceIndex 1
+		interfaceName com/virtenio/driver/DeviceDriver
+		typeId 2
+		importIndex -1
+		next false
+	}
+]
+methods [
+	{
+		index 0
+		signature "<init>()V"
+		definedIn BaseStation
+		signatureHash 10657
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 192
+		codeLength 13
+		codeOffset 0
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 13
+				name this
+				descriptor LBaseStation;
+				index 0
+			}
+		]
+		pcToLine {
+			0 15
+			5 16
+			12 17
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 10
+			12 12
+		}
+	}
+	{
+		index 1
+		signature configUSART()Lcom/virtenio/driver/usart/USART;
+		definedIn BaseStation
+		signatureHash 22526
+		maxStack 6
+		maxLocals 5
+		exceptionCount 1
+		argsFieldCount 1
+		flags 65632
+		codeLength 38
+		codeOffset 23
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 36
+				length 2
+				name e
+				descriptor Ljava/lang/Exception;
+				index 4
+			}
+			{
+				startPC 0
+				length 36
+				name this
+				descriptor LBaseStation;
+				index 0
+			}
+			{
+				startPC 2
+				length 34
+				name instanceID
+				descriptor I
+				index 1
+			}
+			{
+				startPC 19
+				length 20
+				name params
+				descriptor Lcom/virtenio/driver/usart/USARTParams;
+				index 2
+			}
+			{
+				startPC 24
+				length 15
+				name usart
+				descriptor Lcom/virtenio/driver/usart/NativeUSART;
+				index 3
+			}
+		]
+		pcToLine {
+			0 20
+			2 21
+			19 23
+			24 25
+			28 26
+			33 27
+			35 28
+			36 29
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 2
+			6 6
+			8 11
+			10 13
+			11 14
+			12 15
+			15 18
+			16 19
+			17 20
+			20 23
+			21 24
+			22 25
+			25 28
+			26 28
+			27 30
+			30 33
+			31 34
+			32 35
+			34 36
+			35 37
+		}
+	}
+	{
+		index 2
+		signature sendToPC()V
+		definedIn BaseStation
+		signatureHash 40076
+		maxStack 3
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 65600
+		codeLength 14
+		codeOffset 61
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 14
+				name this
+				descriptor LBaseStation;
+				index 0
+			}
+			{
+				startPC 9
+				length 5
+				name t
+				descriptor Ljava/lang/Thread;
+				index 1
+			}
+		]
+		pcToLine {
+			0 34
+			9 48
+			13 49
+		}
+		pcTranslation {
+			0 0
+			3 0
+			4 4
+			5 5
+			8 8
+			9 9
+			10 10
+			13 13
+		}
+	}
+	{
+		index 3
+		signature run()V
+		definedIn BaseStation
+		signatureHash 2844
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 72
+		codeLength 5
+		codeOffset 75
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 5
+				name this
+				descriptor LBaseStation;
+				index 0
+			}
+		]
+		pcToLine {
+			0 52
+			4 53
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 4
+		}
+	}
+	{
+		index 4
+		signature "main([Ljava/lang/String;)V"
+		definedIn BaseStation
+		signatureHash 65044
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 66
+		codeLength 11
+		codeOffset 80
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 11
+				name args
+				descriptor "[Ljava/lang/String;"
+				index 0
+			}
+		]
+		pcToLine {
+			0 56
+			10 57
+		}
+		pcTranslation {
+			0 0
+			3 0
+			4 4
+			7 7
+			10 10
+		}
+	}
+	{
+		index 5
+		signature access$000(LBaseStation;)Ljava/io/OutputStream;
+		definedIn BaseStation
+		signatureHash 23536
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 2
+		codeLength 4
+		codeOffset 91
+		getter1For 1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 5
+				name x0
+				descriptor LBaseStation;
+				index 0
+			}
+		]
+		pcToLine {
+			0 11
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 3
+		}
+	}
+	{
+		index 6
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 34633
+		maxStack 5
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 9
+		codeOffset 95
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 45
+			8 46
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 7
+		signature "<init>(IIII)V"
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 54491
+		maxStack 2
+		maxLocals 5
+		exceptionCount 0
+		argsFieldCount 5
+		flags 192
+		codeLength 26
+		codeOffset 104
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 64
+			5 65
+			10 66
+			15 67
+			20 68
+			25 69
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 10
+			10 10
+			11 12
+			14 15
+			15 15
+			16 17
+			19 20
+			20 20
+			22 22
+			25 25
+		}
+	}
+	{
+		index 8
+		signature getBaudrate()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 9898
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 130
+		getter1For 0
+		getter2For -1
+		pcToLine {
+			0 77
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 9
+		signature setBaudrate(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 53338
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 19
+		codeOffset 132
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 87
+			5 88
+			14 90
+			18 91
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			8 5
+			9 9
+			12 13
+			13 14
+			14 14
+			15 16
+			18 18
+		}
+	}
+	{
+		index 10
+		signature getDataBits()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 56557
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 151
+		getter1For 1
+		getter2For -1
+		pcToLine {
+			0 102
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 11
+		signature setDataBits(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 18395
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 30
+		codeOffset 153
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 115
+			16 116
+			25 118
+			29 119
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			6 6
+			7 7
+			10 10
+			11 11
+			13 13
+			16 16
+			19 16
+			20 20
+			23 24
+			24 25
+			25 25
+			26 27
+			29 29
+		}
+	}
+	{
+		index 12
+		signature getStopBits()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 64297
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 183
+		getter1For 2
+		getter2For -1
+		pcToLine {
+			0 129
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 13
+		signature setStopBits(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 9366
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 29
+		codeOffset 185
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 141
+			15 142
+			24 144
+			28 145
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			6 6
+			7 7
+			10 10
+			11 11
+			12 12
+			15 15
+			18 15
+			19 19
+			22 23
+			23 24
+			24 24
+			25 26
+			28 28
+		}
+	}
+	{
+		index 14
+		signature getParity()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 1221
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 214
+		getter1For 3
+		getter2For -1
+		pcToLine {
+			0 155
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 15
+		signature setParity(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 59853
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 28
+		codeOffset 216
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 167
+			14 168
+			23 170
+			27 171
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			6 6
+			9 9
+			10 10
+			11 11
+			14 14
+			17 14
+			18 18
+			21 22
+			22 23
+			23 23
+			24 25
+			27 27
+		}
+	}
+	{
+		index 16
+		signature getInputBufferSize()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 56613
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 244
+		getter1For 4
+		getter2For -1
+		pcToLine {
+			0 180
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 17
+		signature setInputBufferSize(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 17864
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 19
+		codeOffset 246
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 191
+			5 192
+			14 194
+			18 195
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			8 5
+			9 9
+			12 13
+			13 14
+			14 14
+			15 16
+			18 18
+		}
+	}
+	{
+		index 18
+		signature getOutputBufferSize()I
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 15113
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 265
+		getter1For 5
+		getter2For -1
+		pcToLine {
+			0 204
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 19
+		signature setOutputBufferSize(I)V
+		definedIn com/virtenio/driver/usart/USARTParams
+		signatureHash 49422
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 0
+		codeLength 19
+		codeOffset 267
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 215
+			5 216
+			14 218
+			18 219
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+			8 5
+			9 9
+			12 13
+			13 14
+			14 14
+			15 16
+			18 18
+		}
+	}
+	{
+		index 20
+		signature command(Lcom/virtenio/driver/usart/NativeUSART;I)I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 17504
+		maxStack 0
+		maxLocals 0
+		exceptionCount 0
+		argsFieldCount 2
+		flags 196690
+		codeLength 0
+		codeOffset 0
+		getter1For -1
+		getter2For -1
+		nativeId {
+			importIndex 0
+			nativeId 76
+		}
+	}
+	{
+		index 21
+		signature getManager()Lcom/virtenio/driver/InstanceManager;
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 59513
+		maxStack 2
+		maxLocals 0
+		exceptionCount 0
+		argsFieldCount 0
+		flags 131139
+		codeLength 32
+		codeOffset 286
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 50
+			7 51
+			16 52
+			27 64
+		}
+		pcTranslation {
+			0 0
+			3 4
+			6 7
+			7 8
+			8 9
+			11 13
+			14 16
+			17 16
+			18 20
+			21 23
+			24 27
+			27 31
+		}
+	}
+	{
+		index 22
+		signature getInstance(I)Lcom/virtenio/driver/usart/NativeUSART;
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 38775
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131138
+		codeLength 12
+		codeOffset 318
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 75
+		}
+		pcTranslation {
+			0 0
+			3 3
+			4 4
+			7 7
+			10 11
+		}
+	}
+	{
+		index 23
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 34633
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 196800
+		codeLength 10
+		codeOffset 330
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 82
+			5 265
+			9 83
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 5
+			6 6
+			7 7
+			10 9
+		}
+	}
+	{
+		index 24
+		signature errorCheck()V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 22025
+		maxStack 3
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 196672
+		codeLength 14
+		codeOffset 340
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 89
+			4 90
+			13 92
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			7 4
+			10 4
+			11 8
+			12 8
+			15 9
+			18 12
+			19 13
+		}
+	}
+	{
+		index 25
+		signature open(Lcom/virtenio/driver/usart/USARTParams;)V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 19910
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 25
+		codeOffset 354
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 101
+			4 102
+			13 104
+			20 105
+			24 106
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 4
+			7 4
+			8 8
+			11 12
+			12 13
+			13 14
+			14 15
+			17 19
+			18 20
+			19 21
+			22 24
+		}
+	}
+	{
+		index 26
+		signature isOpened()Z
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 1141
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 22
+		codeOffset 379
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 115
+			16 116
+			20 117
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 3
+			6 7
+			9 10
+			10 11
+			13 14
+			14 15
+			15 16
+			16 17
+			19 20
+			20 21
+		}
+	}
+	{
+		index 27
+		signature close()V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 53782
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 12
+		codeOffset 401
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 127
+			7 128
+			11 129
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 6
+			6 7
+			7 8
+			10 11
+		}
+	}
+	{
+		index 28
+		signature read()I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 47003
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 13
+		codeOffset 413
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 138
+			7 139
+			11 140
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 6
+			6 7
+			7 8
+			10 11
+			11 12
+		}
+	}
+	{
+		index 29
+		signature "read([BII)I"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 16749
+		maxStack 3
+		maxLocals 5
+		exceptionCount 0
+		argsFieldCount 4
+		flags 131136
+		codeLength 26
+		codeOffset 426
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 150
+			2 151
+			12 152
+			20 153
+			24 155
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 2
+			4 2
+			5 4
+			6 5
+			9 9
+			12 12
+			13 13
+			15 15
+			18 19
+			20 20
+			21 21
+			24 24
+			26 25
+		}
+	}
+	{
+		index 30
+		signature "read([B)I"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 35517
+		maxStack 4
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 9
+		codeOffset 452
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 165
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 31
+		signature "readFully([B)I"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 12560
+		maxStack 4
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 9
+		codeOffset 461
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 175
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 32
+		signature "readFully([BII)I"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 40285
+		maxStack 3
+		maxLocals 5
+		exceptionCount 0
+		argsFieldCount 4
+		flags 131136
+		codeLength 26
+		codeOffset 470
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 185
+			2 186
+			12 187
+			20 188
+			24 190
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 2
+			4 2
+			5 4
+			6 5
+			9 9
+			12 12
+			13 13
+			15 15
+			18 19
+			20 20
+			21 21
+			24 24
+			26 25
+		}
+	}
+	{
+		index 33
+		signature write(I)V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 15824
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 12
+		codeOffset 496
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 200
+			7 201
+			11 202
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 6
+			6 7
+			7 8
+			10 11
+		}
+	}
+	{
+		index 34
+		signature "write([BII)V"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 56054
+		maxStack 3
+		maxLocals 4
+		exceptionCount 0
+		argsFieldCount 4
+		flags 131136
+		codeLength 23
+		codeOffset 508
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 211
+			10 212
+			18 213
+			22 215
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			6 7
+			9 10
+			10 11
+			12 13
+			15 17
+			16 18
+			17 19
+			20 22
+		}
+	}
+	{
+		index 35
+		signature "write([B)V"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 17773
+		maxStack 4
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 9
+		codeOffset 531
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 224
+			8 225
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 36
+		signature flush()V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 33036
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 13
+		codeOffset 540
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 234
+			8 235
+			12 236
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 3
+			6 7
+			7 8
+			8 9
+			11 12
+		}
+	}
+	{
+		index 37
+		signature available()I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 1663
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 14
+		codeOffset 553
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 245
+			8 246
+			12 247
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 3
+			6 7
+			7 8
+			8 9
+			11 12
+			12 13
+		}
+	}
+	{
+		index 38
+		signature pending()I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 60310
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 14
+		codeOffset 567
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 257
+			8 258
+			12 259
+		}
+		pcTranslation {
+			0 0
+			1 1
+			3 3
+			6 7
+			7 8
+			8 9
+			11 12
+			12 13
+		}
+	}
+	{
+		index 39
+		signature setReceiveTimeout(I)V
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 23983
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 17
+		codeOffset 581
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 274
+			4 275
+			12 276
+			16 277
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 4
+			6 5
+			8 7
+			11 11
+			12 12
+			13 13
+			16 16
+		}
+	}
+	{
+		index 40
+		signature getReceiveTimeout()I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 43274
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 2
+		codeOffset 598
+		getter1For 4
+		getter2For -1
+		pcToLine {
+			0 286
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 41
+		signature getInputStream()Ljava/io/InputStream;
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 52582
+		maxStack 3
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 9
+		codeOffset 600
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 296
+		}
+		pcTranslation {
+			0 0
+			3 0
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 42
+		signature getOutputStream()Ljava/io/OutputStream;
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 60629
+		maxStack 3
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 9
+		codeOffset 609
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 306
+		}
+		pcTranslation {
+			0 0
+			3 0
+			4 4
+			5 5
+			8 8
+		}
+	}
+	{
+		index 43
+		signature "<init>(ILcom/virtenio/driver/usart/NativeUSART$1;)V"
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 34518
+		maxStack 2
+		maxLocals 3
+		exceptionCount 0
+		argsFieldCount 3
+		flags 131264
+		codeLength 6
+		codeOffset 618
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 14
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 5
+		}
+	}
+	{
+		index 44
+		signature access$100(Lcom/virtenio/driver/usart/NativeUSART;I)I
+		definedIn com/virtenio/driver/usart/NativeUSART
+		signatureHash 23570
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131074
+		codeLength 7
+		codeOffset 624
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 14
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 6
+		}
+	}
+	{
+		index 45
+		signature "<init>(Lcom/virtenio/driver/usart/USART;)V"
+		definedIn com/virtenio/driver/usart/USARTOutputStream
+		signatureHash 63910
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 631
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 21
+			5 22
+			9 23
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 9
+		}
+	}
+	{
+		index 46
+		signature write(I)V
+		definedIn com/virtenio/driver/usart/USARTOutputStream
+		signatureHash 15824
+		maxStack 3
+		maxLocals 3
+		exceptionCount 1
+		argsFieldCount 2
+		flags 96
+		codeLength 20
+		codeOffset 651
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 32
+			5 35
+			8 33
+			9 34
+			19 36
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			5 2
+			10 5
+			13 8
+			14 9
+			17 9
+			18 13
+			19 14
+			22 18
+			23 19
+		}
+	}
+	{
+		index 47
+		signature "write([BII)V"
+		definedIn com/virtenio/driver/usart/USARTOutputStream
+		signatureHash 56054
+		maxStack 4
+		maxLocals 5
+		exceptionCount 1
+		argsFieldCount 4
+		flags 96
+		codeLength 22
+		codeOffset 681
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 45
+			7 48
+			10 46
+			11 47
+			21 49
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			5 1
+			6 3
+			7 4
+			12 7
+			15 10
+			17 11
+			20 11
+			21 15
+			23 16
+			26 20
+			27 21
+		}
+	}
+	{
+		index 48
+		signature flush()V
+		definedIn com/virtenio/driver/usart/USARTOutputStream
+		signatureHash 33036
+		maxStack 3
+		maxLocals 2
+		exceptionCount 1
+		argsFieldCount 1
+		flags 32
+		codeLength 19
+		codeOffset 713
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 59
+			4 62
+			7 60
+			8 61
+			18 63
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			9 4
+			12 7
+			13 8
+			16 8
+			17 12
+			18 13
+			21 17
+			22 18
+		}
+	}
+	{
+		index 49
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/usart/USARTException
+		signatureHash 34633
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 6
+		codeOffset 732
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 18
+			5 19
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 5
+		}
+	}
+	{
+		index 50
+		signature "<init>(Ljava/lang/Throwable;)V"
+		definedIn com/virtenio/driver/usart/USARTException
+		signatureHash 47660
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 128
+		codeLength 6
+		codeOffset 738
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 29
+			5 30
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 5
+		}
+	}
+	{
+		index 51
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/DriverException
+		signatureHash 34633
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 744
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 16
+			5 17
+			9 18
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 9
+		}
+	}
+	{
+		index 52
+		signature "<init>(ILjava/lang/String;)V"
+		definedIn com/virtenio/driver/DriverException
+		signatureHash 25758
+		maxStack 2
+		maxLocals 3
+		exceptionCount 0
+		argsFieldCount 3
+		flags 192
+		codeLength 11
+		codeOffset 754
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 31
+			6 32
+			10 33
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 6
+			6 6
+			7 8
+			10 10
+		}
+	}
+	{
+		index 53
+		signature "<init>(Ljava/lang/Throwable;)V"
+		definedIn com/virtenio/driver/DriverException
+		signatureHash 47660
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 7
+		codeOffset 765
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 43
+			6 44
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 6
+		}
+	}
+	{
+		index 54
+		signature getErrorCode()I
+		definedIn com/virtenio/driver/DriverException
+		signatureHash 41392
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 772
+		getter1For 3
+		getter2For -1
+		pcToLine {
+			0 52
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 55
+		signature getMessage()Ljava/lang/String;
+		definedIn com/virtenio/driver/DriverException
+		signatureHash 47771
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 1
+		flags 0
+		codeLength 80
+		codeOffset 774
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 62
+			4 63
+			8 64
+			20 66
+			45 68
+			78 69
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 3
+			5 4
+			6 5
+			9 8
+			12 8
+			13 12
+			16 16
+			17 17
+			20 20
+			23 20
+			24 24
+			27 28
+			28 29
+			31 33
+			33 36
+			36 40
+			39 44
+			40 45
+			43 45
+			44 49
+			47 53
+			48 54
+			51 58
+			53 61
+			56 65
+			57 66
+			60 69
+			63 73
+			66 77
+			67 78
+			68 79
+		}
+	}
+	{
+		index 56
+		signature "<init>()V"
+		definedIn com/virtenio/driver/InstanceManager
+		signatureHash 10657
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 192
+		codeLength 6
+		codeOffset 854
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 28
+			5 29
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+		}
+	}
+	{
+		index 57
+		signature getInstance(I)Ljava/lang/Object;
+		definedIn com/virtenio/driver/InstanceManager
+		signatureHash 26452
+		maxStack 4
+		maxLocals 3
+		exceptionCount 0
+		argsFieldCount 2
+		flags 1
+		codeLength 62
+		codeOffset 860
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 45
+			14 46
+			23 47
+			32 49
+			36 50
+			44 52
+			50 53
+			58 55
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			7 4
+			8 5
+			11 8
+			14 11
+			15 11
+			18 12
+			19 13
+			20 14
+			21 15
+			24 18
+			25 18
+			26 18
+			29 23
+			32 23
+			33 27
+			36 31
+			37 32
+			38 32
+			41 33
+			44 36
+			45 36
+			46 38
+			49 42
+			52 44
+			53 44
+			56 45
+			57 46
+			58 47
+			61 50
+			62 50
+			65 51
+			66 51
+			67 53
+			68 54
+			71 57
+			72 58
+			73 58
+			76 59
+			77 60
+			78 61
+		}
+	}
+	{
+		index 58
+		signature "<init>()V"
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 10657
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 192
+		codeLength 6
+		codeOffset 922
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 17
+			5 18
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+		}
+	}
+	{
+		index 59
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 34633
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 928
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 24
+			5 25
+			9 26
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 9
+		}
+	}
+	{
+		index 60
+		signature getErrorId()I
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 45704
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 938
+		getter1For 3
+		getter2For -1
+		pcToLine {
+			0 32
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 61
+		signature "<init>(Ljava/lang/String;)V"
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 5175
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 7
+		codeOffset 940
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 42
+			6 43
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 6
+		}
+	}
+	{
+		index 62
+		signature "<init>(Ljava/lang/String;Ljava/lang/Throwable;)V"
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 54478
+		maxStack 3
+		maxLocals 3
+		exceptionCount 0
+		argsFieldCount 3
+		flags 192
+		codeLength 8
+		codeOffset 947
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 55
+			7 56
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			3 3
+			6 7
+		}
+	}
+	{
+		index 63
+		signature "<init>(Ljava/lang/Throwable;)V"
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 47660
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 7
+		codeOffset 955
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 66
+			6 67
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 6
+		}
+	}
+	{
+		index 64
+		signature forErrorCode(I)V
+		definedIn com/virtenio/driver/DriverInitError
+		signatureHash 33324
+		maxStack 3
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131074
+		codeLength 14
+		codeOffset 962
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 77
+			4 78
+			13 80
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 4
+			7 4
+			8 8
+			9 9
+			12 12
+			13 13
+		}
+	}
+	{
+		index 65
+		signature "<init>()V"
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 10657
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 192
+		codeLength 6
+		codeOffset 976
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 38
+			5 39
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+		}
+	}
+	{
+		index 66
+		signature "<init>(I)V"
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 34633
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 982
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 47
+			5 48
+			9 49
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 9
+		}
+	}
+	{
+		index 67
+		signature getInstanceId()I
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 25371
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 992
+		getter1For 0
+		getter2For -1
+		pcToLine {
+			0 55
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 68
+		signature setInstanceId(I)V
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 48590
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 64
+		codeLength 5
+		codeOffset 994
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 65
+			4 66
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 4
+		}
+	}
+	{
+		index 69
+		signature getLastError()I
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 62473
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 64
+		codeLength 2
+		codeOffset 999
+		getter1For 1
+		getter2For -1
+		pcToLine {
+			0 74
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+		}
+	}
+	{
+		index 70
+		signature clearLastError()V
+		definedIn com/virtenio/driver/NativeDeviceDriver
+		signatureHash 7183
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 0
+		codeLength 5
+		codeOffset 1001
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 81
+			4 82
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 4
+		}
+	}
+	{
+		index 71
+		signature "<init>()V"
+		definedIn com/virtenio/driver/usart/NativeUSART$1
+		signatureHash 10657
+		maxStack 1
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131264
+		codeLength 5
+		codeOffset 1006
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 52
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 4
+		}
+	}
+	{
+		index 72
+		signature createInstance(I)Lcom/virtenio/driver/usart/NativeUSART;
+		definedIn com/virtenio/driver/usart/NativeUSART$1
+		signatureHash 32528
+		maxStack 4
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131136
+		codeLength 10
+		codeOffset 1011
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 55
+		}
+		pcTranslation {
+			0 0
+			3 0
+			4 4
+			5 5
+			6 6
+			9 9
+		}
+	}
+	{
+		index 73
+		signature getInstanceCount()I
+		definedIn com/virtenio/driver/usart/NativeUSART$1
+		signatureHash 1396
+		maxStack 2
+		maxLocals 1
+		exceptionCount 0
+		argsFieldCount 1
+		flags 131136
+		codeLength 6
+		codeOffset 1021
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 60
+		}
+		pcTranslation {
+			0 0
+			1 1
+			2 2
+			5 5
+		}
+	}
+	{
+		index 74
+		signature createInstance(I)Ljava/lang/Object;
+		definedIn com/virtenio/driver/usart/NativeUSART$1
+		signatureHash 24465
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 131072
+		codeLength 6
+		codeOffset 1027
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 52
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 5
+		}
+	}
+	{
+		index 75
+		signature "<init>(Lcom/virtenio/driver/usart/USART;)V"
+		definedIn com/virtenio/driver/usart/USARTInputStream
+		signatureHash 63910
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 1033
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 22
+			5 23
+			9 24
+		}
+		pcTranslation {
+			0 0
+			1 1
+			4 5
+			5 5
+			6 7
+			9 9
+		}
+	}
+	{
+		index 76
+		signature read()I
+		definedIn com/virtenio/driver/usart/USARTInputStream
+		signatureHash 47003
+		maxStack 3
+		maxLocals 2
+		exceptionCount 1
+		argsFieldCount 1
+		flags 96
+		codeLength 16
+		codeOffset 1053
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 34
+			5 35
+			6 36
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			9 4
+			10 5
+			11 6
+			14 6
+			15 10
+			16 11
+			19 15
+		}
+	}
+	{
+		index 77
+		signature "read([BII)I"
+		definedIn com/virtenio/driver/usart/USARTInputStream
+		signatureHash 16749
+		maxStack 4
+		maxLocals 5
+		exceptionCount 1
+		argsFieldCount 4
+		flags 96
+		codeLength 61
+		codeOffset 1079
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 48
+			8 49
+			12 50
+			48 52
+			50 53
+			51 54
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			5 1
+			6 3
+			7 4
+			12 7
+			14 8
+			16 9
+			19 12
+			22 12
+			23 16
+			26 16
+			27 20
+			30 24
+			32 27
+			35 31
+			36 31
+			39 32
+			44 35
+			47 39
+			50 43
+			53 47
+			54 48
+			56 49
+			57 50
+			59 51
+			62 51
+			63 55
+			65 56
+			68 60
+		}
+	}
+	{
+		index 78
+		signature available()I
+		definedIn com/virtenio/driver/usart/USARTInputStream
+		signatureHash 1663
+		maxStack 3
+		maxLocals 2
+		exceptionCount 1
+		argsFieldCount 1
+		flags 32
+		codeLength 16
+		codeOffset 1150
+		getter1For -1
+		getter2For -1
+		pcToLine {
+			0 67
+			5 68
+			6 69
+		}
+		pcTranslation {
+			0 0
+			1 0
+			4 1
+			9 4
+			10 5
+			11 6
+			14 6
+			15 10
+			16 11
+			19 15
+		}
+	}
+	{
+		index 79
+		signature "<init>(LBaseStation;)V"
+		definedIn BaseStation$1
+		signatureHash 51385
+		maxStack 2
+		maxLocals 2
+		exceptionCount 0
+		argsFieldCount 2
+		flags 192
+		codeLength 10
+		codeOffset 1166
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 0
+				length 10
+				name this
+				descriptor LBaseStation$1;
+				index 0
+			}
+			{
+				startPC 0
+				length 10
+				name this$0
+				descriptor LBaseStation;
+				index 1
+			}
+		]
+		pcToLine {
+			0 34
+		}
+		pcTranslation {
+			0 0
+			1 0
+			2 2
+			5 4
+			6 5
+			9 9
+		}
+	}
+	{
+		index 80
+		signature run()V
+		definedIn BaseStation$1
+		signatureHash 2844
+		maxStack 4
+		maxLocals 3
+		exceptionCount 1
+		argsFieldCount 1
+		flags 40
+		codeLength 32
+		codeOffset 1186
+		getter1For -1
+		getter2For -1
+		localVars [
+			{
+				startPC 25
+				length 4
+				name e
+				descriptor Ljava/io/IOException;
+				index 2
+			}
+			{
+				startPC 0
+				length 33
+				name this
+				descriptor LBaseStation$1;
+				index 0
+			}
+			{
+				startPC 4
+				length 30
+				name str
+				descriptor Ljava/lang/String;
+				index 1
+			}
+		]
+		pcToLine {
+			0 38
+			4 40
+			21 44
+			24 41
+			25 43
+			29 44
+		}
+		pcTranslation {
+			0 0
+			2 3
+			3 4
+			4 4
+			7 6
+			10 9
+			11 10
+			14 14
+			15 15
+			16 16
+			19 18
+			22 21
+			25 24
+			26 25
+			27 26
+			30 29
+		}
+	}
+]
+abstractMethods [
+	{
+		signature getInstanceCount()I
+		definedIn com/virtenio/driver/InstanceManager
+		flags 0
+	}
+	{
+		signature createInstance(I)Ljava/lang/Object;
+		definedIn com/virtenio/driver/InstanceManager
+		flags 0
+	}
+]
+interfaceMethods [
+	{
+		signature open(Lcom/virtenio/driver/usart/USARTParams;)V
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature isOpened()Z
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature close()V
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature read()I
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "read([B)I"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "read([BII)I"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "readFully([B)I"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "readFully([BII)I"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature write(I)V
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "write([B)V"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature "write([BII)V"
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature flush()V
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature available()I
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature pending()I
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature getInputStream()Ljava/io/InputStream;
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature getOutputStream()Ljava/io/OutputStream;
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature setReceiveTimeout(I)V
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature getReceiveTimeout()I
+		definedIn com/virtenio/driver/usart/USART
+		flags 0
+	}
+	{
+		signature isOpened()Z
+		definedIn com/virtenio/driver/DeviceDriver
+		flags 0
+	}
+	{
+		signature close()V
+		definedIn com/virtenio/driver/DeviceDriver
+		flags 0
+	}
+]
+staticPrimitiveFields [
+]
+staticReferenceFields [
+	{
+		index 0
+		name instanceManager
+		descriptor Lcom/virtenio/driver/InstanceManager;
+		definedIn com/virtenio/driver/usart/NativeUSART
+	}
+]
+strings [
+	{
+		index 0
+		string "Timeout: "
+	}
+	{
+		index 1
+		string "; "
+	}
+	{
+		index 2
+		string "Hello PC! This is Preon32"
+	}
+	{
+		index 3
+		string "Error Code: "
+	}
+]
+importedNativeMethods [
+]

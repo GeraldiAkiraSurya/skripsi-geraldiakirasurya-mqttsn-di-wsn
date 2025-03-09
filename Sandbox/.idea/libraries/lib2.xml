@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/lib/rtx_doc.zip!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/lib/rt_doc.zip!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/lib/rtx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/targets/Preon32_1.4/lib/rt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
