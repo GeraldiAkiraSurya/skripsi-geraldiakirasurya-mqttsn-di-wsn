@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/0b53757f66.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="header">
+      <!-- <i class="fa-solid fa-aperture" style="color: #17428c;"></i> -->
+      <div class="month">July, 2023</div>
+      <div class="software-name"><i class="fa-solid fa-satellite-dish" style="color: #eeeeee; margin-right: 5px;"></i>SensorWatch</div>
+      
+      <div class="username">Hi, Geraldi</div>
+    </div>
+    
+    <div class="section-container">
+
+      <!-- SECTION -->
+      <div class="section">
+        <div class="location-title">Ruang 9018 Lab FTIS</div>
+        <div class="data-card-container">
+          
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-temperature-high" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Temperature</div>
+              <div class="data-content" id="temperature1">0 &deg;C</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-water" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Pressure</div>
+              <div class="data-content" id="pressure1">0</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-droplet" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Humidity</div>
+              <div class="data-content" id="humidity1">0%</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-compact-disc" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Acceleration</div>
+              <div class="data-content" id="acceleration1">[0, 0, 0]</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION -->
+      <div class="section">
+        <div class="location-title">Ruang 9017 Lab FTIS</div>
+        <div class="data-card-container">
+          
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-temperature-high" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Temperature</div>
+              <div class="data-content" id="temperature2">0 &deg;C</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-water" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Pressure</div>
+              <div class="data-content" id="pressure2">0</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-droplet" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Humidity</div>
+              <div class="data-content" id="humidity2">0%</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-compact-disc" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Acceleration</div>
+              <div class="data-content" id="acceleration2">[0, 0, 0]</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION -->
+      <div class="section">
+        <div class="location-title">Ruang 9016 Lab FTIS</div>
+        <div class="data-card-container">
+          
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-temperature-high" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Temperature</div>
+              <div class="data-content" id="temperature3">0 &deg;C</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-water" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Pressure</div>
+              <div class="data-content" id="pressure3">0</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-droplet" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Humidity</div>
+              <div class="data-content" id="humidity3">0%</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-compact-disc" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Acceleration</div>
+              <div class="data-content" id="acceleration3">[0, 0, 0]</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION -->
+      <div class="section">
+        <div class="location-title">Ruang 9015 Lab FTIS</div>
+        <div class="data-card-container">
+          
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-temperature-high" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Temperature</div>
+              <div class="data-content" id="temperature4">0 &deg;C</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-water" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Pressure</div>
+              <div class="data-content" id="pressure4">0</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-droplet" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Humidity</div>
+              <div class="data-content" id="humidity4">0%</div>
+            </div>
+          </div>
+
+          <div class="data-card">
+            <div class="data-card-icon">
+              <i class="fa-solid fa-compact-disc" style="color: #2464d3;"></i>
+            </div>
+            <div class="data-card-content">
+              <div class="data-title">Acceleration</div>
+              <div class="data-content" id="acceleration4">[0, 0, 0]</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</body>
+</html>
